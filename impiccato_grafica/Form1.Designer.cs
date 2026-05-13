@@ -1,6 +1,6 @@
 ﻿namespace impiccato_grafica
 {
-    partial class Form1
+    partial class titolo
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,331 +28,472 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnA = new Button();
-            btnB = new Button();
-            btnC = new Button();
-            btnD = new Button();
-            btnE = new Button();
-            btnF = new Button();
-            btnG = new Button();
-            btnH = new Button();
-            btnI = new Button();
-            btnJ = new Button();
-            btnK = new Button();
-            btnL = new Button();
-            btnM = new Button();
-            btnN = new Button();
-            btnO = new Button();
-            btnP = new Button();
-            btnQ = new Button();
-            btnR = new Button();
-            btnS = new Button();
-            btnT = new Button();
-            btnU = new Button();
-            btnV = new Button();
-            btnW = new Button();
-            btnY = new Button();
-            btnZ = new Button();
-            btnX = new Button();
+            buttonA = new Button();
+            buttonL = new Button();
+            buttonK = new Button();
+            buttonJ = new Button();
+            buttonI = new Button();
+            buttonH = new Button();
+            buttonG = new Button();
+            buttonZ = new Button();
+            buttonY = new Button();
+            buttonX = new Button();
+            buttonW = new Button();
+            buttonV = new Button();
+            buttonU = new Button();
+            buttonT = new Button();
+            buttonS = new Button();
+            buttonR = new Button();
+            buttonQ = new Button();
+            buttonP = new Button();
+            buttonO = new Button();
+            buttonN = new Button();
+            buttonM = new Button();
+            buttonF = new Button();
+            buttonE = new Button();
+            buttonD = new Button();
+            buttonC = new Button();
+            buttonB = new Button();
+            label1 = new Label();
+            TERMINARE = new Button();
+            categoria = new Label();
+            animali = new Button();
+            sport = new Button();
+            città = new Button();
+            difficolta = new Label();
+            difficile = new Button();
+            medio = new Button();
+            facile = new Button();
             SuspendLayout();
             // 
-            // btnA
+            // buttonA
             // 
-            btnA.Location = new Point(486, 43);
-            btnA.Name = "btnA";
-            btnA.Size = new Size(43, 40);
-            btnA.TabIndex = 0;
-            btnA.Text = "button1";
-            btnA.UseVisualStyleBackColor = true;
+            buttonA.Location = new Point(25, 275);
+            buttonA.Name = "buttonA";
+            buttonA.Size = new Size(31, 30);
+            buttonA.TabIndex = 0;
+            buttonA.Text = "A";
+            buttonA.UseVisualStyleBackColor = true;
+            buttonA.Click += btnA_Click;
             // 
-            // btnB
+            // buttonL
             // 
-            btnB.Location = new Point(523, 43);
-            btnB.Name = "btnB";
-            btnB.Size = new Size(43, 40);
-            btnB.TabIndex = 1;
-            btnB.Text = "button2";
-            btnB.UseVisualStyleBackColor = true;
+            buttonL.Location = new Point(210, 311);
+            buttonL.Name = "buttonL";
+            buttonL.Size = new Size(31, 30);
+            buttonL.TabIndex = 1;
+            buttonL.Text = "L";
+            buttonL.UseVisualStyleBackColor = true;
             // 
-            // btnC
+            // buttonK
             // 
-            btnC.Location = new Point(560, 43);
-            btnC.Name = "btnC";
-            btnC.Size = new Size(43, 40);
-            btnC.TabIndex = 2;
-            btnC.Text = "button3";
-            btnC.UseVisualStyleBackColor = true;
+            buttonK.Location = new Point(173, 311);
+            buttonK.Name = "buttonK";
+            buttonK.Size = new Size(31, 30);
+            buttonK.TabIndex = 2;
+            buttonK.Text = "K";
+            buttonK.UseVisualStyleBackColor = true;
             // 
-            // btnD
+            // buttonJ
             // 
-            btnD.Location = new Point(596, 43);
-            btnD.Name = "btnD";
-            btnD.Size = new Size(43, 40);
-            btnD.TabIndex = 3;
-            btnD.Text = "button4";
-            btnD.UseVisualStyleBackColor = true;
+            buttonJ.Location = new Point(136, 311);
+            buttonJ.Name = "buttonJ";
+            buttonJ.Size = new Size(31, 30);
+            buttonJ.TabIndex = 3;
+            buttonJ.Text = "J";
+            buttonJ.UseVisualStyleBackColor = true;
             // 
-            // btnE
+            // buttonI
             // 
-            btnE.Location = new Point(634, 43);
-            btnE.Name = "btnE";
-            btnE.Size = new Size(43, 40);
-            btnE.TabIndex = 4;
-            btnE.Text = "button5";
-            btnE.UseVisualStyleBackColor = true;
+            buttonI.Location = new Point(99, 311);
+            buttonI.Name = "buttonI";
+            buttonI.Size = new Size(31, 30);
+            buttonI.TabIndex = 4;
+            buttonI.Text = "I";
+            buttonI.UseVisualStyleBackColor = true;
             // 
-            // btnF
+            // buttonH
             // 
-            btnF.Location = new Point(674, 43);
-            btnF.Name = "btnF";
-            btnF.Size = new Size(43, 40);
-            btnF.TabIndex = 5;
-            btnF.Text = "button6";
-            btnF.UseVisualStyleBackColor = true;
+            buttonH.Location = new Point(62, 311);
+            buttonH.Name = "buttonH";
+            buttonH.Size = new Size(31, 30);
+            buttonH.TabIndex = 5;
+            buttonH.Text = "H";
+            buttonH.UseVisualStyleBackColor = true;
             // 
-            // btnG
+            // buttonG
             // 
-            btnG.Location = new Point(486, 89);
-            btnG.Name = "btnG";
-            btnG.Size = new Size(43, 40);
-            btnG.TabIndex = 6;
-            btnG.Text = "button7";
-            btnG.UseVisualStyleBackColor = true;
+            buttonG.Location = new Point(25, 311);
+            buttonG.Name = "buttonG";
+            buttonG.Size = new Size(31, 30);
+            buttonG.TabIndex = 6;
+            buttonG.Text = "G";
+            buttonG.UseVisualStyleBackColor = true;
             // 
-            // btnH
+            // buttonZ
             // 
-            btnH.Location = new Point(523, 89);
-            btnH.Name = "btnH";
-            btnH.Size = new Size(43, 40);
-            btnH.TabIndex = 7;
-            btnH.Text = "button8";
-            btnH.UseVisualStyleBackColor = true;
+            buttonZ.Location = new Point(62, 419);
+            buttonZ.Name = "buttonZ";
+            buttonZ.Size = new Size(31, 30);
+            buttonZ.TabIndex = 7;
+            buttonZ.Text = "Z";
+            buttonZ.UseVisualStyleBackColor = true;
             // 
-            // btnI
+            // buttonY
             // 
-            btnI.Location = new Point(560, 89);
-            btnI.Name = "btnI";
-            btnI.Size = new Size(43, 40);
-            btnI.TabIndex = 8;
-            btnI.Text = "button9";
-            btnI.UseVisualStyleBackColor = true;
+            buttonY.Location = new Point(25, 419);
+            buttonY.Name = "buttonY";
+            buttonY.Size = new Size(31, 30);
+            buttonY.TabIndex = 8;
+            buttonY.Text = "Y";
+            buttonY.UseVisualStyleBackColor = true;
             // 
-            // btnJ
+            // buttonX
             // 
-            btnJ.Location = new Point(596, 89);
-            btnJ.Name = "btnJ";
-            btnJ.Size = new Size(43, 40);
-            btnJ.TabIndex = 9;
-            btnJ.Text = "button10";
-            btnJ.UseVisualStyleBackColor = true;
+            buttonX.Location = new Point(210, 383);
+            buttonX.Name = "buttonX";
+            buttonX.Size = new Size(31, 30);
+            buttonX.TabIndex = 9;
+            buttonX.Text = "X";
+            buttonX.UseVisualStyleBackColor = true;
             // 
-            // btnK
+            // buttonW
             // 
-            btnK.Location = new Point(634, 89);
-            btnK.Name = "btnK";
-            btnK.Size = new Size(43, 40);
-            btnK.TabIndex = 10;
-            btnK.Text = "button11";
-            btnK.UseVisualStyleBackColor = true;
+            buttonW.Location = new Point(173, 383);
+            buttonW.Name = "buttonW";
+            buttonW.Size = new Size(31, 30);
+            buttonW.TabIndex = 10;
+            buttonW.Text = "W";
+            buttonW.UseVisualStyleBackColor = true;
             // 
-            // btnL
+            // buttonV
             // 
-            btnL.Location = new Point(674, 89);
-            btnL.Name = "btnL";
-            btnL.Size = new Size(43, 40);
-            btnL.TabIndex = 11;
-            btnL.Text = "button12";
-            btnL.UseVisualStyleBackColor = true;
+            buttonV.Location = new Point(136, 383);
+            buttonV.Name = "buttonV";
+            buttonV.Size = new Size(31, 30);
+            buttonV.TabIndex = 11;
+            buttonV.Text = "V";
+            buttonV.UseVisualStyleBackColor = true;
             // 
-            // btnM
+            // buttonU
             // 
-            btnM.Location = new Point(486, 135);
-            btnM.Name = "btnM";
-            btnM.Size = new Size(43, 40);
-            btnM.TabIndex = 12;
-            btnM.Text = "button13";
-            btnM.UseVisualStyleBackColor = true;
+            buttonU.Location = new Point(99, 383);
+            buttonU.Name = "buttonU";
+            buttonU.Size = new Size(31, 30);
+            buttonU.TabIndex = 12;
+            buttonU.Text = "U";
+            buttonU.UseVisualStyleBackColor = true;
             // 
-            // btnN
+            // buttonT
             // 
-            btnN.Location = new Point(523, 135);
-            btnN.Name = "btnN";
-            btnN.Size = new Size(43, 40);
-            btnN.TabIndex = 13;
-            btnN.Text = "button14";
-            btnN.UseVisualStyleBackColor = true;
+            buttonT.Location = new Point(62, 383);
+            buttonT.Name = "buttonT";
+            buttonT.Size = new Size(31, 30);
+            buttonT.TabIndex = 13;
+            buttonT.Text = "T";
+            buttonT.UseVisualStyleBackColor = true;
             // 
-            // btnO
+            // buttonS
             // 
-            btnO.Location = new Point(560, 135);
-            btnO.Name = "btnO";
-            btnO.Size = new Size(43, 40);
-            btnO.TabIndex = 14;
-            btnO.Text = "button15";
-            btnO.UseVisualStyleBackColor = true;
+            buttonS.Location = new Point(25, 383);
+            buttonS.Name = "buttonS";
+            buttonS.Size = new Size(31, 30);
+            buttonS.TabIndex = 14;
+            buttonS.Text = "S";
+            buttonS.UseVisualStyleBackColor = true;
             // 
-            // btnP
+            // buttonR
             // 
-            btnP.Location = new Point(596, 135);
-            btnP.Name = "btnP";
-            btnP.Size = new Size(43, 40);
-            btnP.TabIndex = 15;
-            btnP.Text = "button16";
-            btnP.UseVisualStyleBackColor = true;
+            buttonR.Location = new Point(210, 347);
+            buttonR.Name = "buttonR";
+            buttonR.Size = new Size(31, 30);
+            buttonR.TabIndex = 15;
+            buttonR.Text = "R";
+            buttonR.UseVisualStyleBackColor = true;
             // 
-            // btnQ
+            // buttonQ
             // 
-            btnQ.Location = new Point(634, 135);
-            btnQ.Name = "btnQ";
-            btnQ.Size = new Size(43, 40);
-            btnQ.TabIndex = 16;
-            btnQ.Text = "button17";
-            btnQ.UseVisualStyleBackColor = true;
+            buttonQ.Location = new Point(173, 347);
+            buttonQ.Name = "buttonQ";
+            buttonQ.Size = new Size(31, 30);
+            buttonQ.TabIndex = 16;
+            buttonQ.Text = "Q";
+            buttonQ.UseVisualStyleBackColor = true;
             // 
-            // btnR
+            // buttonP
             // 
-            btnR.Location = new Point(674, 135);
-            btnR.Name = "btnR";
-            btnR.Size = new Size(43, 40);
-            btnR.TabIndex = 17;
-            btnR.Text = "button18";
-            btnR.UseVisualStyleBackColor = true;
+            buttonP.Location = new Point(136, 347);
+            buttonP.Name = "buttonP";
+            buttonP.Size = new Size(31, 30);
+            buttonP.TabIndex = 17;
+            buttonP.Text = "P";
+            buttonP.UseVisualStyleBackColor = true;
             // 
-            // btnS
+            // buttonO
             // 
-            btnS.Location = new Point(486, 181);
-            btnS.Name = "btnS";
-            btnS.Size = new Size(43, 40);
-            btnS.TabIndex = 18;
-            btnS.Text = "button19";
-            btnS.UseVisualStyleBackColor = true;
+            buttonO.Location = new Point(99, 347);
+            buttonO.Name = "buttonO";
+            buttonO.Size = new Size(31, 30);
+            buttonO.TabIndex = 18;
+            buttonO.Text = "O";
+            buttonO.UseVisualStyleBackColor = true;
             // 
-            // btnT
+            // buttonN
             // 
-            btnT.Location = new Point(523, 181);
-            btnT.Name = "btnT";
-            btnT.Size = new Size(43, 40);
-            btnT.TabIndex = 19;
-            btnT.Text = "button20";
-            btnT.UseVisualStyleBackColor = true;
+            buttonN.Location = new Point(62, 347);
+            buttonN.Name = "buttonN";
+            buttonN.Size = new Size(31, 30);
+            buttonN.TabIndex = 19;
+            buttonN.Text = "N";
+            buttonN.UseVisualStyleBackColor = true;
             // 
-            // btnU
+            // buttonM
             // 
-            btnU.Location = new Point(560, 181);
-            btnU.Name = "btnU";
-            btnU.Size = new Size(43, 40);
-            btnU.TabIndex = 20;
-            btnU.Text = "button21";
-            btnU.UseVisualStyleBackColor = true;
+            buttonM.Location = new Point(25, 347);
+            buttonM.Name = "buttonM";
+            buttonM.Size = new Size(31, 30);
+            buttonM.TabIndex = 20;
+            buttonM.Text = "M";
+            buttonM.UseVisualStyleBackColor = true;
             // 
-            // btnV
+            // buttonF
             // 
-            btnV.Location = new Point(596, 181);
-            btnV.Name = "btnV";
-            btnV.Size = new Size(43, 40);
-            btnV.TabIndex = 21;
-            btnV.Text = "button1";
-            btnV.UseVisualStyleBackColor = true;
+            buttonF.Location = new Point(210, 275);
+            buttonF.Name = "buttonF";
+            buttonF.Size = new Size(31, 30);
+            buttonF.TabIndex = 21;
+            buttonF.Text = "F";
+            buttonF.UseVisualStyleBackColor = true;
             // 
-            // btnW
+            // buttonE
             // 
-            btnW.Location = new Point(634, 181);
-            btnW.Name = "btnW";
-            btnW.Size = new Size(43, 40);
-            btnW.TabIndex = 22;
-            btnW.Text = "button2";
-            btnW.UseVisualStyleBackColor = true;
+            buttonE.Location = new Point(173, 275);
+            buttonE.Name = "buttonE";
+            buttonE.Size = new Size(31, 30);
+            buttonE.TabIndex = 22;
+            buttonE.Text = "E";
+            buttonE.UseVisualStyleBackColor = true;
             // 
-            // btnY
+            // buttonD
             // 
-            btnY.Location = new Point(539, 227);
-            btnY.Name = "btnY";
-            btnY.Size = new Size(43, 40);
-            btnY.TabIndex = 23;
-            btnY.Text = "button3";
-            btnY.UseVisualStyleBackColor = true;
+            buttonD.Location = new Point(136, 275);
+            buttonD.Name = "buttonD";
+            buttonD.Size = new Size(31, 30);
+            buttonD.TabIndex = 23;
+            buttonD.Text = "D";
+            buttonD.UseVisualStyleBackColor = true;
             // 
-            // btnZ
+            // buttonC
             // 
-            btnZ.Location = new Point(612, 227);
-            btnZ.Name = "btnZ";
-            btnZ.Size = new Size(43, 40);
-            btnZ.TabIndex = 24;
-            btnZ.Text = "button4";
-            btnZ.UseVisualStyleBackColor = true;
+            buttonC.Location = new Point(99, 275);
+            buttonC.Name = "buttonC";
+            buttonC.Size = new Size(31, 30);
+            buttonC.TabIndex = 24;
+            buttonC.Text = "C";
+            buttonC.UseVisualStyleBackColor = true;
             // 
-            // btnX
+            // buttonB
             // 
-            btnX.Location = new Point(674, 181);
-            btnX.Name = "btnX";
-            btnX.Size = new Size(43, 40);
-            btnX.TabIndex = 25;
-            btnX.Text = "button5";
-            btnX.UseVisualStyleBackColor = true;
+            buttonB.Location = new Point(62, 275);
+            buttonB.Name = "buttonB";
+            buttonB.Size = new Size(31, 30);
+            buttonB.TabIndex = 25;
+            buttonB.Text = "B";
+            buttonB.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Adobe Gothic Std B", 20.25F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label1.Location = new Point(12, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(316, 34);
+            label1.TabIndex = 26;
+            label1.Text = "GIOCO DELL' IMPICCATO";
+            // 
+            // TERMINARE
+            // 
+            TERMINARE.BackColor = Color.Red;
+            TERMINARE.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            TERMINARE.ForeColor = SystemColors.ButtonHighlight;
+            TERMINARE.Location = new Point(613, 406);
+            TERMINARE.Name = "TERMINARE";
+            TERMINARE.Size = new Size(71, 32);
+            TERMINARE.TabIndex = 27;
+            TERMINARE.Text = "TERMINA";
+            TERMINARE.UseVisualStyleBackColor = false;
+            // 
+            // categoria
+            // 
+            categoria.AutoSize = true;
+            categoria.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            categoria.Location = new Point(605, 9);
+            categoria.Name = "categoria";
+            categoria.Size = new Size(81, 21);
+            categoria.TabIndex = 28;
+            categoria.Text = "Categoria";
+            // 
+            // animali
+            // 
+            animali.BackColor = SystemColors.ButtonFace;
+            animali.Location = new Point(605, 33);
+            animali.Name = "animali";
+            animali.Size = new Size(75, 23);
+            animali.TabIndex = 29;
+            animali.Text = "Animali";
+            animali.UseVisualStyleBackColor = false;
+            animali.Click += animali_Click;
+            // 
+            // sport
+            // 
+            sport.BackColor = SystemColors.ButtonFace;
+            sport.Location = new Point(605, 62);
+            sport.Name = "sport";
+            sport.Size = new Size(75, 23);
+            sport.TabIndex = 30;
+            sport.Text = "Sport";
+            sport.UseVisualStyleBackColor = false;
+            sport.Click += sport_Click;
+            // 
+            // città
+            // 
+            città.BackColor = SystemColors.ButtonFace;
+            città.Location = new Point(605, 91);
+            città.Name = "città";
+            città.Size = new Size(75, 23);
+            città.TabIndex = 31;
+            città.Text = "Città";
+            città.UseVisualStyleBackColor = false;
+            città.Click += città_Click;
+            // 
+            // difficolta
+            // 
+            difficolta.AutoSize = true;
+            difficolta.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            difficolta.Location = new Point(605, 117);
+            difficolta.Name = "difficolta";
+            difficolta.Size = new Size(77, 21);
+            difficolta.TabIndex = 32;
+            difficolta.Text = "Difficoltà";
+            // 
+            // difficile
+            // 
+            difficile.BackColor = Color.FromArgb(255, 192, 192);
+            difficile.Location = new Point(605, 197);
+            difficile.Name = "difficile";
+            difficile.Size = new Size(75, 23);
+            difficile.TabIndex = 35;
+            difficile.Text = "Difficile";
+            difficile.UseVisualStyleBackColor = false;
+            difficile.Click += difficile_Click;
+            // 
+            // medio
+            // 
+            medio.BackColor = Color.FromArgb(255, 255, 192);
+            medio.Location = new Point(605, 168);
+            medio.Name = "medio";
+            medio.Size = new Size(75, 23);
+            medio.TabIndex = 34;
+            medio.Text = "Medio";
+            medio.UseVisualStyleBackColor = false;
+            medio.Click += medio_Click;
+            // 
+            // facile
+            // 
+            facile.BackColor = Color.FromArgb(192, 255, 192);
+            facile.Location = new Point(605, 139);
+            facile.Name = "facile";
+            facile.Size = new Size(75, 23);
+            facile.TabIndex = 33;
+            facile.Text = "Facile";
+            facile.UseVisualStyleBackColor = false;
+            facile.Click += facile_Click;
+            // 
+            // titolo
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ButtonFace;
             ClientSize = new Size(800, 450);
-            Controls.Add(btnX);
-            Controls.Add(btnZ);
-            Controls.Add(btnY);
-            Controls.Add(btnW);
-            Controls.Add(btnV);
-            Controls.Add(btnU);
-            Controls.Add(btnT);
-            Controls.Add(btnS);
-            Controls.Add(btnR);
-            Controls.Add(btnQ);
-            Controls.Add(btnP);
-            Controls.Add(btnO);
-            Controls.Add(btnN);
-            Controls.Add(btnM);
-            Controls.Add(btnL);
-            Controls.Add(btnK);
-            Controls.Add(btnJ);
-            Controls.Add(btnI);
-            Controls.Add(btnH);
-            Controls.Add(btnG);
-            Controls.Add(btnF);
-            Controls.Add(btnE);
-            Controls.Add(btnD);
-            Controls.Add(btnC);
-            Controls.Add(btnB);
-            Controls.Add(btnA);
-            Name = "Form1";
+            Controls.Add(difficile);
+            Controls.Add(medio);
+            Controls.Add(facile);
+            Controls.Add(difficolta);
+            Controls.Add(città);
+            Controls.Add(sport);
+            Controls.Add(animali);
+            Controls.Add(categoria);
+            Controls.Add(TERMINARE);
+            Controls.Add(label1);
+            Controls.Add(buttonB);
+            Controls.Add(buttonC);
+            Controls.Add(buttonD);
+            Controls.Add(buttonE);
+            Controls.Add(buttonF);
+            Controls.Add(buttonM);
+            Controls.Add(buttonN);
+            Controls.Add(buttonO);
+            Controls.Add(buttonP);
+            Controls.Add(buttonQ);
+            Controls.Add(buttonR);
+            Controls.Add(buttonS);
+            Controls.Add(buttonT);
+            Controls.Add(buttonU);
+            Controls.Add(buttonV);
+            Controls.Add(buttonW);
+            Controls.Add(buttonX);
+            Controls.Add(buttonY);
+            Controls.Add(buttonZ);
+            Controls.Add(buttonG);
+            Controls.Add(buttonH);
+            Controls.Add(buttonI);
+            Controls.Add(buttonJ);
+            Controls.Add(buttonK);
+            Controls.Add(buttonL);
+            Controls.Add(buttonA);
+            Name = "titolo";
             Text = "Form1";
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private Button btnA;
-        private Button btnB;
-        private Button btnC;
-        private Button btnD;
-        private Button btnE;
-        private Button btnF;
-        private Button btnG;
-        private Button btnH;
-        private Button btnI;
-        private Button btnJ;
-        private Button btnK;
-        private Button btnL;
-        private Button btnM;
-        private Button btnN;
-        private Button btnO;
-        private Button btnP;
-        private Button btnQ;
-        private Button btnR;
-        private Button btnS;
-        private Button btnT;
-        private Button btnU;
-        private Button btnV;
-        private Button btnW;
-        private Button btnY;
-        private Button btnZ;
-        private Button btnX;
+        private Button buttonA;
+        private Button buttonL;
+        private Button buttonK;
+        private Button buttonJ;
+        private Button buttonI;
+        private Button buttonH;
+        private Button buttonG;
+        private Button buttonZ;
+        private Button buttonY;
+        private Button buttonX;
+        private Button buttonW;
+        private Button buttonV;
+        private Button buttonU;
+        private Button buttonT;
+        private Button buttonS;
+        private Button buttonR;
+        private Button buttonQ;
+        private Button buttonP;
+        private Button buttonO;
+        private Button buttonN;
+        private Button buttonM;
+        private Button buttonF;
+        private Button buttonE;
+        private Button buttonD;
+        private Button buttonC;
+        private Button buttonB;
+        private Label label1;
+        private Button TERMINARE;
+        private Label categoria;
+        private Button animali;
+        private Button sport;
+        private Button città;
+        private Label difficolta;
+        private Button difficile;
+        private Button medio;
+        private Button facile;
     }
 }
