@@ -66,7 +66,9 @@ namespace impiccato_grafica
 
         private void categoriaSport_Click(object sender, EventArgs e)
         {
-            sceltaCategoria = "sport";
+            sceltaCategoria = "sport";  
+
+
 
 
             using (StreamReader pw = new StreamReader("sport.txt"))
