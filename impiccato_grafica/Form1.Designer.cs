@@ -63,6 +63,8 @@
             buttonC = new Button();
             buttonB = new Button();
             label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -145,7 +147,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
-            label2.Location = new Point(139, 49);
+            label2.Location = new Point(141, 49);
             label2.Name = "label2";
             label2.Size = new Size(509, 55);
             label2.TabIndex = 33;
@@ -159,6 +161,7 @@
             buttonA.TabIndex = 34;
             buttonA.Text = "A";
             buttonA.UseVisualStyleBackColor = true;
+            buttonA.Click += buttonA_Click;
             // 
             // buttonY
             // 
@@ -391,9 +394,28 @@
             label3.Font = new Font("Algerian", 36F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.Location = new Point(41, 146);
             label3.Name = "label3";
-            label3.Size = new Size(191, 54);
+            label3.Size = new Size(0, 54);
             label3.TabIndex = 60;
-            label3.Text = parolaNascosta;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label4.Location = new Point(96, 49);
+            label4.Name = "label4";
+            label4.Size = new Size(612, 55);
+            label4.TabIndex = 61;
+            label4.Text = "GIOCO DELL'IMPICCATO";
+            label4.Click += label4_Click;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Algerian", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label5.Location = new Point(82, 144);
+            label5.Name = "label5";
+            label5.Size = new Size(0, 35);
+            label5.TabIndex = 62;
             // 
             // Form1
             // 
@@ -401,6 +423,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonFace;
             ClientSize = new Size(800, 450);
+            Controls.Add(label5);
+            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(buttonB);
             Controls.Add(buttonC);
@@ -478,5 +502,7 @@
         private Button buttonC;
         private Button buttonB;
         private Label label3;
+        private Label label4;
+        private Label label5;
     }
 }

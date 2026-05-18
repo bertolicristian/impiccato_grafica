@@ -1,9 +1,11 @@
 
+
 namespace impiccato_grafica
 {
     public partial class Form1 : Form
     {
-        string sceltaDifficolta, sceltaCategoria, parolaScelta, parolaNascosta;
+        string sceltaDifficolta, sceltaCategoria, parolaScelta, parolaNascosta, letteraScelta;
+        int posizioneParola;
         List<string> animali = new List<string>();
         List<string> sport = new List<string>();
         List<string> citta = new List<string>();
@@ -39,6 +41,9 @@ namespace impiccato_grafica
             buttonZ.Visible = false;
 
             label3.Visible = false;
+            label4.Visible = false;
+            label2.Visible = false;
+            label5.Text = "";
         }
 
         private void categoriaAnimali_Click(object sender, EventArgs e)
@@ -62,11 +67,12 @@ namespace impiccato_grafica
             categoriaAnimali.Visible = false;
             categoriaSport.Visible = false;
             label1.Visible = false;
+            label2.Visible = true;
         }
 
         private void categoriaSport_Click(object sender, EventArgs e)
         {
-            sceltaCategoria = "sport";  
+            sceltaCategoria = "sport";
 
 
 
@@ -87,6 +93,7 @@ namespace impiccato_grafica
             categoriaAnimali.Visible = false;
             categoriaSport.Visible = false;
             label1.Visible = false;
+            label2.Visible = true;
         }
 
         private void categoriaCitta_Click(object sender, EventArgs e)
@@ -110,6 +117,7 @@ namespace impiccato_grafica
             categoriaAnimali.Visible = false;
             categoriaSport.Visible = false;
             label1.Visible = false;
+            label2.Visible = true;
         }
 
         private void difficoltaFacile_Click(object sender, EventArgs e)
@@ -122,8 +130,28 @@ namespace impiccato_grafica
             if (sceltaCategoria == "sport" && sceltaDifficolta == "facile")
             {
                 Random random = new Random();
-                int posizioneParola = random.Next(1, 11);
-                
+                posizioneParola = random.Next(1, 11);
+                parolaScelta = new string('_', sport[posizioneParola].Length);
+
+                label5.Text = parolaScelta;
+            }
+
+            else if (sceltaCategoria == "animali" && sceltaDifficolta == "facile")
+            {
+                Random random = new Random();
+                posizioneParola = random.Next(1, 11);
+                parolaScelta = new string('_', animali[posizioneParola].Length);
+
+                label5.Text = parolaScelta;
+            }
+
+            else if (sceltaCategoria == "citta" && sceltaDifficolta == "facile")
+            {
+                Random random = new Random();
+                posizioneParola = random.Next(1, 11);
+                parolaScelta = new string('_', citta[posizioneParola].Length);
+
+                label5.Text = parolaScelta;
             }
 
 
@@ -156,11 +184,39 @@ namespace impiccato_grafica
             buttonZ.Visible = true;
 
             label3.Visible = true;
+            label4.Visible = true;
         }
 
         private void difficoltaMedia_Click(object sender, EventArgs e)
         {
             sceltaDifficolta = "media";
+
+            if (sceltaCategoria == "sport" && sceltaDifficolta == "media")
+            {
+                Random random = new Random();
+                posizioneParola = random.Next(12, 22);
+                parolaScelta = new string('_', sport[posizioneParola].Length);
+
+                label5.Text = parolaScelta;
+            }
+
+            else if (sceltaCategoria == "animali" && sceltaDifficolta == "media")
+            {
+                Random random = new Random();
+                posizioneParola = random.Next(12, 22);
+                parolaScelta = new string('_', animali[posizioneParola].Length);
+
+                label5.Text = parolaScelta;
+            }
+
+            else if (sceltaCategoria == "citta" && sceltaDifficolta == "media")
+            {
+                Random random = new Random();
+                posizioneParola = random.Next(12, 22);
+                parolaScelta = new string('_', citta[posizioneParola].Length);
+
+                label5.Text = parolaScelta;
+            }
 
             difficoltaFacile.Visible = false;
             difficoltaMedia.Visible = false;
@@ -194,11 +250,41 @@ namespace impiccato_grafica
             buttonZ.Visible = true;
 
             label3.Visible = true;
+            label4.Visible = true;
         }
 
         private void difficoltaDifficile_Click(object sender, EventArgs e)
         {
-            sceltaDifficolta = "difficile"; difficoltaFacile.Visible = false;
+            sceltaDifficolta = "difficile";
+
+            if (sceltaCategoria == "sport" && sceltaDifficolta == "difficile")
+            {
+                Random random = new Random();
+                posizioneParola = random.Next(23, 33);
+                parolaScelta = new string('_', sport[posizioneParola].Length);
+
+                label5.Text = parolaScelta;
+            }
+
+            else if (sceltaCategoria == "animali" && sceltaDifficolta == "difficile")
+            {
+                Random random = new Random();
+                posizioneParola = random.Next(23, 33);
+                parolaScelta = new string('_', animali[posizioneParola].Length);
+
+                label5.Text = parolaScelta;
+            }
+
+            else if (sceltaCategoria == "citta" && sceltaDifficolta == "difficile")
+            {
+                Random random = new Random();
+                posizioneParola = random.Next(23, 33);
+                parolaScelta = new string('_', citta[posizioneParola].Length);
+
+                label5.Text = parolaScelta;
+            }
+
+            difficoltaFacile.Visible = false;
             difficoltaMedia.Visible = false;
             difficoltaDifficile.Visible = false;
             label2.Visible = false;
@@ -230,7 +316,22 @@ namespace impiccato_grafica
             buttonZ.Visible = true;
 
             label3.Visible = true;
+            label4.Visible = true;
         }
 
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonA_Click(object sender, EventArgs e)
+        {
+            letteraScelta = "a";
+
+            if (sceltaCategoria == "animali" && animali[posizioneParola].Contains(letteraScelta))
+            {
+
+            }
+        }
     }
 }
