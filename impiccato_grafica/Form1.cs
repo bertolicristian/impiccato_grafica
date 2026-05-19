@@ -4,7 +4,8 @@ namespace impiccato_grafica
 {
     public partial class Form1 : Form
     {
-        string sceltaDifficolta, sceltaCategoria, parolaScelta, parolaNascosta, letteraScelta;
+        string sceltaDifficolta, sceltaCategoria, parolaScelta, parolaNascosta;
+        char letteraScelta;
         int posizioneParola;
         List<string> animali = new List<string>();
         List<string> sport = new List<string>();
@@ -132,7 +133,7 @@ namespace impiccato_grafica
                 Random random = new Random();
                 posizioneParola = random.Next(1, 11);
                 parolaScelta = new string('_', sport[posizioneParola].Length);
-
+                parolaNascosta = sport[posizioneParola];
                 label5.Text = parolaScelta;
             }
 
@@ -141,7 +142,7 @@ namespace impiccato_grafica
                 Random random = new Random();
                 posizioneParola = random.Next(1, 11);
                 parolaScelta = new string('_', animali[posizioneParola].Length);
-
+                parolaNascosta = animali[posizioneParola];
                 label5.Text = parolaScelta;
             }
 
@@ -150,7 +151,7 @@ namespace impiccato_grafica
                 Random random = new Random();
                 posizioneParola = random.Next(1, 11);
                 parolaScelta = new string('_', citta[posizioneParola].Length);
-
+                parolaNascosta = citta[posizioneParola];
                 label5.Text = parolaScelta;
             }
 
@@ -196,7 +197,7 @@ namespace impiccato_grafica
                 Random random = new Random();
                 posizioneParola = random.Next(12, 22);
                 parolaScelta = new string('_', sport[posizioneParola].Length);
-
+                parolaNascosta = sport[posizioneParola];
                 label5.Text = parolaScelta;
             }
 
@@ -205,7 +206,7 @@ namespace impiccato_grafica
                 Random random = new Random();
                 posizioneParola = random.Next(12, 22);
                 parolaScelta = new string('_', animali[posizioneParola].Length);
-
+                parolaNascosta = animali[posizioneParola];
                 label5.Text = parolaScelta;
             }
 
@@ -214,7 +215,7 @@ namespace impiccato_grafica
                 Random random = new Random();
                 posizioneParola = random.Next(12, 22);
                 parolaScelta = new string('_', citta[posizioneParola].Length);
-
+                parolaNascosta = citta[posizioneParola];
                 label5.Text = parolaScelta;
             }
 
@@ -262,7 +263,7 @@ namespace impiccato_grafica
                 Random random = new Random();
                 posizioneParola = random.Next(23, 33);
                 parolaScelta = new string('_', sport[posizioneParola].Length);
-
+                parolaNascosta = sport[posizioneParola];
                 label5.Text = parolaScelta;
             }
 
@@ -271,7 +272,7 @@ namespace impiccato_grafica
                 Random random = new Random();
                 posizioneParola = random.Next(23, 33);
                 parolaScelta = new string('_', animali[posizioneParola].Length);
-
+                parolaNascosta = animali[posizioneParola];
                 label5.Text = parolaScelta;
             }
 
@@ -280,7 +281,7 @@ namespace impiccato_grafica
                 Random random = new Random();
                 posizioneParola = random.Next(23, 33);
                 parolaScelta = new string('_', citta[posizioneParola].Length);
-
+                parolaNascosta = citta[posizioneParola];
                 label5.Text = parolaScelta;
             }
 
@@ -326,12 +327,522 @@ namespace impiccato_grafica
 
         private void buttonA_Click(object sender, EventArgs e)
         {
-            letteraScelta = "a";
+            letteraScelta = 'a';
+            char[] pSChar = parolaScelta.ToCharArray();
 
-            if (sceltaCategoria == "animali" && animali[posizioneParola].Contains(letteraScelta))
+            if (parolaNascosta.Contains(letteraScelta))
             {
-
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
             }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonB_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'b';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonC_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'c';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonD_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'd';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonE_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'e';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonF_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'f';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonG_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'g';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonH_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'h';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonI_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'i';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonJ_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'j';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonK_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'k';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonL_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'l';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonM_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'm';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonN_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'n';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonO_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'o';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonP_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'p';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonQ_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'q';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonR_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'r';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonS_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 's';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonT_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 't';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonU_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'u';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonV_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'v';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonW_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'w';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonX_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'x';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonY_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'y';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
+        }
+
+        private void buttonZ_Click(object sender, EventArgs e)
+        {
+            letteraScelta = 'z';
+            char[] pSChar = parolaScelta.ToCharArray();
+
+            if (parolaNascosta.Contains(letteraScelta))
+            {
+                for (int i = 0; i < parolaNascosta.Length; i++)
+                {
+                    if (parolaNascosta[i] == letteraScelta)
+                    {
+                        pSChar[i] = letteraScelta;
+                    }
+                }
+            }
+
+            parolaScelta = new string(pSChar);
+            label5.Text = parolaScelta;
         }
     }
 }

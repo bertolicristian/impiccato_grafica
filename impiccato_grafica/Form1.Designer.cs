@@ -171,6 +171,7 @@
             buttonY.TabIndex = 35;
             buttonY.Text = "Y";
             buttonY.UseVisualStyleBackColor = true;
+            buttonY.Click += buttonY_Click;
             // 
             // buttonZ
             // 
@@ -180,6 +181,7 @@
             buttonZ.TabIndex = 36;
             buttonZ.Text = "Z";
             buttonZ.UseVisualStyleBackColor = true;
+            buttonZ.Click += buttonZ_Click;
             // 
             // buttonX
             // 
@@ -189,6 +191,7 @@
             buttonX.TabIndex = 37;
             buttonX.Text = "X";
             buttonX.UseVisualStyleBackColor = true;
+            buttonX.Click += buttonX_Click;
             // 
             // buttonW
             // 
@@ -198,6 +201,7 @@
             buttonW.TabIndex = 38;
             buttonW.Text = "W";
             buttonW.UseVisualStyleBackColor = true;
+            buttonW.Click += buttonW_Click;
             // 
             // buttonV
             // 
@@ -207,6 +211,7 @@
             buttonV.TabIndex = 39;
             buttonV.Text = "V";
             buttonV.UseVisualStyleBackColor = true;
+            buttonV.Click += buttonV_Click;
             // 
             // buttonU
             // 
@@ -216,6 +221,7 @@
             buttonU.TabIndex = 40;
             buttonU.Text = "U";
             buttonU.UseVisualStyleBackColor = true;
+            buttonU.Click += buttonU_Click;
             // 
             // buttonT
             // 
@@ -225,6 +231,7 @@
             buttonT.TabIndex = 41;
             buttonT.Text = "T";
             buttonT.UseVisualStyleBackColor = true;
+            buttonT.Click += buttonT_Click;
             // 
             // buttonS
             // 
@@ -234,6 +241,7 @@
             buttonS.TabIndex = 42;
             buttonS.Text = "S";
             buttonS.UseVisualStyleBackColor = true;
+            buttonS.Click += buttonS_Click;
             // 
             // buttonR
             // 
@@ -243,6 +251,7 @@
             buttonR.TabIndex = 43;
             buttonR.Text = "R";
             buttonR.UseVisualStyleBackColor = true;
+            buttonR.Click += buttonR_Click;
             // 
             // buttonQ
             // 
@@ -252,6 +261,7 @@
             buttonQ.TabIndex = 44;
             buttonQ.Text = "Q";
             buttonQ.UseVisualStyleBackColor = true;
+            buttonQ.Click += buttonQ_Click;
             // 
             // buttonP
             // 
@@ -261,6 +271,7 @@
             buttonP.TabIndex = 45;
             buttonP.Text = "P";
             buttonP.UseVisualStyleBackColor = true;
+            buttonP.Click += buttonP_Click;
             // 
             // buttonO
             // 
@@ -270,6 +281,7 @@
             buttonO.TabIndex = 46;
             buttonO.Text = "O";
             buttonO.UseVisualStyleBackColor = true;
+            buttonO.Click += buttonO_Click;
             // 
             // buttonN
             // 
@@ -279,6 +291,7 @@
             buttonN.TabIndex = 47;
             buttonN.Text = "N";
             buttonN.UseVisualStyleBackColor = true;
+            buttonN.Click += buttonN_Click;
             // 
             // buttonM
             // 
@@ -288,6 +301,7 @@
             buttonM.TabIndex = 48;
             buttonM.Text = "M";
             buttonM.UseVisualStyleBackColor = true;
+            buttonM.Click += buttonM_Click;
             // 
             // buttonL
             // 
@@ -297,6 +311,7 @@
             buttonL.TabIndex = 49;
             buttonL.Text = "L";
             buttonL.UseVisualStyleBackColor = true;
+            buttonL.Click += buttonL_Click;
             // 
             // buttonK
             // 
@@ -306,6 +321,7 @@
             buttonK.TabIndex = 50;
             buttonK.Text = "K";
             buttonK.UseVisualStyleBackColor = true;
+            buttonK.Click += buttonK_Click;
             // 
             // buttonJ
             // 
@@ -315,6 +331,7 @@
             buttonJ.TabIndex = 51;
             buttonJ.Text = "J";
             buttonJ.UseVisualStyleBackColor = true;
+            buttonJ.Click += buttonJ_Click;
             // 
             // buttonI
             // 
@@ -324,6 +341,7 @@
             buttonI.TabIndex = 52;
             buttonI.Text = "I";
             buttonI.UseVisualStyleBackColor = true;
+            buttonI.Click += buttonI_Click;
             // 
             // buttonH
             // 
@@ -333,6 +351,7 @@
             buttonH.TabIndex = 53;
             buttonH.Text = "H";
             buttonH.UseVisualStyleBackColor = true;
+            buttonH.Click += buttonH_Click;
             // 
             // buttonG
             // 
@@ -342,6 +361,7 @@
             buttonG.TabIndex = 54;
             buttonG.Text = "G";
             buttonG.UseVisualStyleBackColor = true;
+            buttonG.Click += buttonG_Click;
             // 
             // buttonF
             // 
@@ -351,6 +371,7 @@
             buttonF.TabIndex = 55;
             buttonF.Text = "F";
             buttonF.UseVisualStyleBackColor = true;
+            buttonF.Click += buttonF_Click;
             // 
             // buttonE
             // 
@@ -360,6 +381,7 @@
             buttonE.TabIndex = 56;
             buttonE.Text = "E";
             buttonE.UseVisualStyleBackColor = true;
+            buttonE.Click += buttonE_Click;
             // 
             // buttonD
             // 
@@ -369,6 +391,7 @@
             buttonD.TabIndex = 57;
             buttonD.Text = "D";
             buttonD.UseVisualStyleBackColor = true;
+            buttonD.Click += buttonD_Click;
             // 
             // buttonC
             // 
@@ -378,6 +401,7 @@
             buttonC.TabIndex = 58;
             buttonC.Text = "C";
             buttonC.UseVisualStyleBackColor = true;
+            buttonC.Click += buttonC_Click;
             // 
             // buttonB
             // 
@@ -387,6 +411,7 @@
             buttonB.TabIndex = 59;
             buttonB.Text = "B";
             buttonB.UseVisualStyleBackColor = true;
+            buttonB.Click += buttonB_Click;
             // 
             // label3
             // 
