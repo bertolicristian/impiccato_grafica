@@ -6,7 +6,7 @@ namespace impiccato_grafica
     {
         string sceltaDifficolta, sceltaCategoria, parolaScelta, parolaNascosta;
         char letteraScelta;
-        int posizioneParola;
+        int posizioneParola, numeroTentativi = 6;
         List<string> animali = new List<string>();
         List<string> sport = new List<string>();
         List<string> citta = new List<string>();
@@ -45,6 +45,14 @@ namespace impiccato_grafica
             label4.Visible = false;
             label2.Visible = false;
             label5.Text = "";
+
+            baseImpiccato.Visible = false;
+            testaImpiccato.Visible = false;
+            corpoImpiccato.Visible = false;
+            braccioDestro.Visible = false;
+            braccioSinistro.Visible = false;
+            gambaDestra.Visible = false;
+            gambaSinistra.Visible = false;
         }
 
         private void categoriaAnimali_Click(object sender, EventArgs e)
@@ -75,9 +83,6 @@ namespace impiccato_grafica
         {
             sceltaCategoria = "sport";
 
-
-
-
             using (StreamReader pw = new StreamReader("sport.txt"))
             {
                 string riga = pw.ReadLine();
@@ -100,7 +105,6 @@ namespace impiccato_grafica
         private void categoriaCitta_Click(object sender, EventArgs e)
         {
             sceltaCategoria = "citta";
-
 
             using (StreamReader pw = new StreamReader("città.txt"))
             {
@@ -186,6 +190,8 @@ namespace impiccato_grafica
 
             label3.Visible = true;
             label4.Visible = true;
+
+            baseImpiccato.Visible = true;
         }
 
         private void difficoltaMedia_Click(object sender, EventArgs e)
@@ -252,6 +258,8 @@ namespace impiccato_grafica
 
             label3.Visible = true;
             label4.Visible = true;
+
+            baseImpiccato.Visible = true;
         }
 
         private void difficoltaDifficile_Click(object sender, EventArgs e)
@@ -318,6 +326,8 @@ namespace impiccato_grafica
 
             label3.Visible = true;
             label4.Visible = true;
+
+            baseImpiccato.Visible = true;
         }
 
         private void label4_Click(object sender, EventArgs e)
@@ -341,6 +351,42 @@ namespace impiccato_grafica
                 }
             }
 
+            else
+            {
+                numeroTentativi--;
+
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+                }
+            }
+
+            
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -360,7 +406,41 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+                }
+            }
+
+            
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -380,7 +460,17 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
+            
+
+            if (numeroTentativi == 0)
+            {
+                gambaSinistra.Visible = true;
+            }
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -400,7 +490,12 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
+            
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -420,7 +515,12 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
+            
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -439,6 +539,10 @@ namespace impiccato_grafica
                         pSChar[i] = letteraScelta;
                     }
                 }
+            }
+            else
+            {
+                numeroTentativi--;
             }
 
             parolaScelta = new string(pSChar);
@@ -460,7 +564,12 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
+            
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -480,7 +589,12 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
+            
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -500,7 +614,12 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
+            
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -520,7 +639,12 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
+            
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -540,7 +664,12 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
+            
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -560,7 +689,12 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
+            
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -580,7 +714,12 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
+            
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -600,7 +739,12 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
+            
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -620,7 +764,12 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
+            
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -640,6 +789,12 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
+
+            
 
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
@@ -660,7 +815,12 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
+            
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -680,7 +840,12 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
+            
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -700,7 +865,12 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
+            
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -720,7 +890,12 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
+            
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -739,6 +914,10 @@ namespace impiccato_grafica
                         pSChar[i] = letteraScelta;
                     }
                 }
+            }
+            else
+            {
+                numeroTentativi--;
             }
 
             parolaScelta = new string(pSChar);
@@ -760,6 +939,10 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
@@ -779,6 +962,10 @@ namespace impiccato_grafica
                         pSChar[i] = letteraScelta;
                     }
                 }
+            }
+            else
+            {
+                numeroTentativi--;
             }
 
             parolaScelta = new string(pSChar);
@@ -800,6 +987,10 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
@@ -819,6 +1010,10 @@ namespace impiccato_grafica
                         pSChar[i] = letteraScelta;
                     }
                 }
+            }
+            else
+            {
+                numeroTentativi--;
             }
 
             parolaScelta = new string(pSChar);
@@ -840,7 +1035,12 @@ namespace impiccato_grafica
                     }
                 }
             }
+            else
+            {
+                numeroTentativi--;
+            }
 
+            
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }

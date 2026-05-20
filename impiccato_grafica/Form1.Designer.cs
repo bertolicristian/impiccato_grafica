@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             label1 = new Label();
             categoriaAnimali = new Button();
             categoriaSport = new Button();
@@ -65,6 +66,20 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
+            baseImpiccato = new PictureBox();
+            testaImpiccato = new PictureBox();
+            corpoImpiccato = new PictureBox();
+            braccioDestro = new PictureBox();
+            braccioSinistro = new PictureBox();
+            gambaDestra = new PictureBox();
+            gambaSinistra = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)baseImpiccato).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)testaImpiccato).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)corpoImpiccato).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)braccioDestro).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)braccioSinistro).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gambaDestra).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)gambaSinistra).BeginInit();
             SuspendLayout();
             // 
             // label1
@@ -425,6 +440,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.BackColor = Color.White;
             label4.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label4.Location = new Point(96, 49);
             label4.Name = "label4";
@@ -442,12 +458,92 @@
             label5.Size = new Size(0, 35);
             label5.TabIndex = 62;
             // 
+            // baseImpiccato
+            // 
+            baseImpiccato.BackColor = Color.White;
+            baseImpiccato.Image = (Image)resources.GetObject("baseImpiccato.Image");
+            baseImpiccato.Location = new Point(439, 117);
+            baseImpiccato.Name = "baseImpiccato";
+            baseImpiccato.Size = new Size(236, 307);
+            baseImpiccato.SizeMode = PictureBoxSizeMode.Zoom;
+            baseImpiccato.TabIndex = 63;
+            baseImpiccato.TabStop = false;
+            // 
+            // testaImpiccato
+            // 
+            testaImpiccato.BackColor = Color.White;
+            testaImpiccato.Image = (Image)resources.GetObject("testaImpiccato.Image");
+            testaImpiccato.Location = new Point(557, 170);
+            testaImpiccato.Name = "testaImpiccato";
+            testaImpiccato.Size = new Size(100, 50);
+            testaImpiccato.SizeMode = PictureBoxSizeMode.Zoom;
+            testaImpiccato.TabIndex = 64;
+            testaImpiccato.TabStop = false;
+            // 
+            // corpoImpiccato
+            // 
+            corpoImpiccato.BackColor = Color.White;
+            corpoImpiccato.Image = (Image)resources.GetObject("corpoImpiccato.Image");
+            corpoImpiccato.Location = new Point(580, 217);
+            corpoImpiccato.Name = "corpoImpiccato";
+            corpoImpiccato.Size = new Size(56, 102);
+            corpoImpiccato.SizeMode = PictureBoxSizeMode.Zoom;
+            corpoImpiccato.TabIndex = 65;
+            corpoImpiccato.TabStop = false;
+            // 
+            // braccioDestro
+            // 
+            braccioDestro.Image = (Image)resources.GetObject("braccioDestro.Image");
+            braccioDestro.Location = new Point(616, 221);
+            braccioDestro.Name = "braccioDestro";
+            braccioDestro.Size = new Size(41, 61);
+            braccioDestro.SizeMode = PictureBoxSizeMode.Zoom;
+            braccioDestro.TabIndex = 66;
+            braccioDestro.TabStop = false;
+            // 
+            // braccioSinistro
+            // 
+            braccioSinistro.Image = (Image)resources.GetObject("braccioSinistro.Image");
+            braccioSinistro.Location = new Point(545, 227);
+            braccioSinistro.Name = "braccioSinistro";
+            braccioSinistro.Size = new Size(54, 56);
+            braccioSinistro.SizeMode = PictureBoxSizeMode.Zoom;
+            braccioSinistro.TabIndex = 67;
+            braccioSinistro.TabStop = false;
+            // 
+            // gambaDestra
+            // 
+            gambaDestra.Image = (Image)resources.GetObject("gambaDestra.Image");
+            gambaDestra.Location = new Point(607, 318);
+            gambaDestra.Name = "gambaDestra";
+            gambaDestra.Size = new Size(60, 75);
+            gambaDestra.SizeMode = PictureBoxSizeMode.Zoom;
+            gambaDestra.TabIndex = 68;
+            gambaDestra.TabStop = false;
+            // 
+            // gambaSinistra
+            // 
+            gambaSinistra.Image = (Image)resources.GetObject("gambaSinistra.Image");
+            gambaSinistra.Location = new Point(553, 317);
+            gambaSinistra.Name = "gambaSinistra";
+            gambaSinistra.Size = new Size(53, 74);
+            gambaSinistra.SizeMode = PictureBoxSizeMode.Zoom;
+            gambaSinistra.TabIndex = 69;
+            gambaSinistra.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ButtonFace;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(758, 450);
+            Controls.Add(testaImpiccato);
+            Controls.Add(gambaSinistra);
+            Controls.Add(gambaDestra);
+            Controls.Add(braccioSinistro);
+            Controls.Add(braccioDestro);
+            Controls.Add(corpoImpiccato);
+            Controls.Add(baseImpiccato);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -485,8 +581,16 @@
             Controls.Add(difficoltaFacile);
             Controls.Add(difficoltaMedia);
             Controls.Add(difficoltaDifficile);
+            ForeColor = Color.Black;
             Name = "Form1";
             Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)baseImpiccato).EndInit();
+            ((System.ComponentModel.ISupportInitialize)testaImpiccato).EndInit();
+            ((System.ComponentModel.ISupportInitialize)corpoImpiccato).EndInit();
+            ((System.ComponentModel.ISupportInitialize)braccioDestro).EndInit();
+            ((System.ComponentModel.ISupportInitialize)braccioSinistro).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gambaDestra).EndInit();
+            ((System.ComponentModel.ISupportInitialize)gambaSinistra).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -529,5 +633,12 @@
         private Label label3;
         private Label label4;
         private Label label5;
+        private PictureBox baseImpiccato;
+        private PictureBox testaImpiccato;
+        private PictureBox corpoImpiccato;
+        private PictureBox braccioDestro;
+        private PictureBox braccioSinistro;
+        private PictureBox gambaDestra;
+        private PictureBox gambaSinistra;
     }
 }
