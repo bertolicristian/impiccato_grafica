@@ -4,6 +4,7 @@ namespace impiccato_grafica
 {
     public partial class Form1 : Form
     {
+
         string sceltaDifficolta, sceltaCategoria, parolaScelta, parolaNascosta;
         char letteraScelta;
         int posizioneParola, numeroTentativi = 6;
@@ -12,48 +13,59 @@ namespace impiccato_grafica
         List<string> citta = new List<string>();
         public Form1()
         {
-            InitializeComponent();
+            {
+                InitializeComponent();
 
-            buttonA.Visible = false;
-            buttonB.Visible = false;
-            buttonC.Visible = false;
-            buttonD.Visible = false;
-            buttonE.Visible = false;
-            buttonF.Visible = false;
-            buttonG.Visible = false;
-            buttonH.Visible = false;
-            buttonI.Visible = false;
-            buttonJ.Visible = false;
-            buttonK.Visible = false;
-            buttonL.Visible = false;
-            buttonM.Visible = false;
-            buttonN.Visible = false;
-            buttonO.Visible = false;
-            buttonP.Visible = false;
-            buttonQ.Visible = false;
-            buttonR.Visible = false;
-            buttonS.Visible = false;
-            buttonT.Visible = false;
-            buttonU.Visible = false;
-            buttonV.Visible = false;
-            buttonW.Visible = false;
-            buttonX.Visible = false;
-            buttonY.Visible = false;
-            buttonZ.Visible = false;
+                buttonA.Visible = false;
+                buttonB.Visible = false;
+                buttonC.Visible = false;
+                buttonD.Visible = false;
+                buttonE.Visible = false;
+                buttonF.Visible = false;
+                buttonG.Visible = false;
+                buttonH.Visible = false;
+                buttonI.Visible = false;
+                buttonJ.Visible = false;
+                buttonK.Visible = false;
+                buttonL.Visible = false;
+                buttonM.Visible = false;
+                buttonN.Visible = false;
+                buttonO.Visible = false;
+                buttonP.Visible = false;
+                buttonQ.Visible = false;
+                buttonR.Visible = false;
+                buttonS.Visible = false;
+                buttonT.Visible = false;
+                buttonU.Visible = false;
+                buttonV.Visible = false;
+                buttonW.Visible = false;
+                buttonX.Visible = false;
+                buttonY.Visible = false;
+                buttonZ.Visible = false;
 
-            label3.Visible = false;
-            label4.Visible = false;
-            label2.Visible = false;
-            label5.Text = "";
+                label3.Visible = false;
+                label4.Visible = false;
+                label2.Visible = false;
+                label5.Text = "";
 
-            baseImpiccato.Visible = false;
-            testaImpiccato.Visible = false;
-            corpoImpiccato.Visible = false;
-            braccioDestro.Visible = false;
-            braccioSinistro.Visible = false;
-            gambaDestra.Visible = false;
-            gambaSinistra.Visible = false;
+                baseImpiccato.Visible = false;
+                testaImpiccato.Visible = false;
+                corpoImpiccato.Visible = false;
+                braccioDestro.Visible = false;
+                braccioSinistro.Visible = false;
+                gambaDestra.Visible = false;
+                gambaSinistra.Visible = false;
+
+                perso.Visible = false;
+                parolaFinale.Visible = false;
+
+                riavviare.Visible = false;
+                terminare.Visible = false;
+                vittoria.Visible = false;
+            }
+
         }
+
 
         private void categoriaAnimali_Click(object sender, EventArgs e)
         {
@@ -192,6 +204,7 @@ namespace impiccato_grafica
             label4.Visible = true;
 
             baseImpiccato.Visible = true;
+            
         }
 
         private void difficoltaMedia_Click(object sender, EventArgs e)
@@ -383,10 +396,48 @@ namespace impiccato_grafica
                 if (numeroTentativi == 0)
                 {
                     gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+
                 }
             }
 
-            
+
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -437,10 +488,47 @@ namespace impiccato_grafica
                 if (numeroTentativi == 0)
                 {
                     gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
                 }
             }
 
-            
+
             parolaScelta = new string(pSChar);
             label5.Text = parolaScelta;
         }
@@ -463,16 +551,82 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
 
-            if (numeroTentativi == 0)
-            {
-                gambaSinistra.Visible = true;
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+                }
+
+
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
             }
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
         }
 
         private void buttonD_Click(object sender, EventArgs e)
@@ -493,11 +647,77 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonE_Click(object sender, EventArgs e)
@@ -518,11 +738,115 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+                if (parolaScelta == parolaNascosta)
+                {
+                    vittoria.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonF_Click(object sender, EventArgs e)
@@ -543,10 +867,76 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonG_Click(object sender, EventArgs e)
@@ -567,11 +957,77 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonH_Click(object sender, EventArgs e)
@@ -592,11 +1048,77 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonI_Click(object sender, EventArgs e)
@@ -617,11 +1139,77 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonJ_Click(object sender, EventArgs e)
@@ -642,11 +1230,77 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonK_Click(object sender, EventArgs e)
@@ -667,11 +1321,77 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonL_Click(object sender, EventArgs e)
@@ -692,11 +1412,77 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonM_Click(object sender, EventArgs e)
@@ -717,11 +1503,77 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonN_Click(object sender, EventArgs e)
@@ -742,11 +1594,77 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonO_Click(object sender, EventArgs e)
@@ -767,11 +1685,77 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonP_Click(object sender, EventArgs e)
@@ -792,12 +1776,78 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
             }
-
-            
-
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
         }
 
         private void buttonQ_Click(object sender, EventArgs e)
@@ -818,11 +1868,77 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonR_Click(object sender, EventArgs e)
@@ -843,11 +1959,77 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonS_Click(object sender, EventArgs e)
@@ -868,11 +2050,77 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonT_Click(object sender, EventArgs e)
@@ -893,11 +2141,77 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonU_Click(object sender, EventArgs e)
@@ -918,10 +2232,76 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonV_Click(object sender, EventArgs e)
@@ -942,10 +2322,76 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonW_Click(object sender, EventArgs e)
@@ -966,10 +2412,76 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonX_Click(object sender, EventArgs e)
@@ -990,10 +2502,76 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonY_Click(object sender, EventArgs e)
@@ -1014,10 +2592,76 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
         }
 
         private void buttonZ_Click(object sender, EventArgs e)
@@ -1038,11 +2682,88 @@ namespace impiccato_grafica
             else
             {
                 numeroTentativi--;
-            }
+                if (numeroTentativi == 5)
+                {
+                    testaImpiccato.Visible = true;
+                }
 
-            
-            parolaScelta = new string(pSChar);
-            label5.Text = parolaScelta;
+                if (numeroTentativi == 4)
+                {
+                    corpoImpiccato.Visible = true;
+                }
+
+                if (numeroTentativi == 3)
+                {
+                    braccioDestro.Visible = true;
+                }
+
+                if (numeroTentativi == 2)
+                {
+                    braccioSinistro.Visible = true;
+                }
+
+                if (numeroTentativi == 1)
+                {
+                    gambaDestra.Visible = true;
+                }
+
+                if (numeroTentativi == 0)
+                {
+                    gambaSinistra.Visible = true;
+
+                    buttonA.Visible = false;
+                    buttonB.Visible = false;
+                    buttonC.Visible = false;
+                    buttonD.Visible = false;
+                    buttonE.Visible = false;
+                    buttonF.Visible = false;
+                    buttonG.Visible = false;
+                    buttonH.Visible = false;
+                    buttonI.Visible = false;
+                    buttonJ.Visible = false;
+                    buttonK.Visible = false;
+                    buttonL.Visible = false;
+                    buttonM.Visible = false;
+                    buttonN.Visible = false;
+                    buttonO.Visible = false;
+                    buttonP.Visible = false;
+                    buttonQ.Visible = false;
+                    buttonR.Visible = false;
+                    buttonS.Visible = false;
+                    buttonT.Visible = false;
+                    buttonU.Visible = false;
+                    buttonV.Visible = false;
+                    buttonW.Visible = false;
+                    buttonX.Visible = false;
+                    buttonY.Visible = false;
+                    buttonZ.Visible = false;
+
+                    label4.Visible = false;
+                    perso.Visible = true;
+                    label5.Visible = false;
+
+                    parolaFinale.Text = "La parola era: " + parolaNascosta;
+                    parolaFinale.Visible = true;
+
+                    riavviare.Visible = true;
+                    terminare.Visible = true;
+                }
+
+
+                parolaScelta = new string(pSChar);
+                label5.Text = parolaScelta;
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+            Environment.Exit(0);
+        }
+
+        private void terminare_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
