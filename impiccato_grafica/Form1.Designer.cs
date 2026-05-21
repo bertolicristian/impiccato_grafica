@@ -94,13 +94,13 @@
             label1.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label1.Location = new Point(139, 46);
             label1.Name = "label1";
-            label1.Size = new Size(511, 55);
+            label1.Size = new Size(636, 69);
             label1.TabIndex = 26;
             label1.Text = "SCEGLI CATEGORIA";
             // 
             // categoriaAnimali
             // 
-            categoriaAnimali.Font = new Font("Miriam Libre", 26.2499962F, FontStyle.Bold | FontStyle.Italic);
+            categoriaAnimali.Font = new Font("Microsoft Sans Serif", 26.2499962F, FontStyle.Bold | FontStyle.Italic);
             categoriaAnimali.Location = new Point(41, 170);
             categoriaAnimali.Name = "categoriaAnimali";
             categoriaAnimali.Size = new Size(186, 112);
@@ -111,7 +111,7 @@
             // 
             // categoriaSport
             // 
-            categoriaSport.Font = new Font("Miriam Libre", 26.2499962F, FontStyle.Bold | FontStyle.Italic);
+            categoriaSport.Font = new Font("Microsoft Sans Serif", 26.2499962F, FontStyle.Bold | FontStyle.Italic);
             categoriaSport.Location = new Point(305, 170);
             categoriaSport.Name = "categoriaSport";
             categoriaSport.Size = new Size(186, 112);
@@ -122,7 +122,7 @@
             // 
             // categoriaCitta
             // 
-            categoriaCitta.Font = new Font("Miriam Libre", 26.2499962F, FontStyle.Bold | FontStyle.Italic);
+            categoriaCitta.Font = new Font("Microsoft Sans Serif", 26.2499962F, FontStyle.Bold | FontStyle.Italic);
             categoriaCitta.Location = new Point(557, 170);
             categoriaCitta.Name = "categoriaCitta";
             categoriaCitta.Size = new Size(198, 112);
@@ -133,7 +133,7 @@
             // 
             // difficoltaMedia
             // 
-            difficoltaMedia.Font = new Font("Miriam Libre", 26.2499962F, FontStyle.Bold | FontStyle.Italic);
+            difficoltaMedia.Font = new Font("Microsoft Sans Serif", 26.2499962F, FontStyle.Bold | FontStyle.Italic);
             difficoltaMedia.Location = new Point(305, 170);
             difficoltaMedia.Name = "difficoltaMedia";
             difficoltaMedia.Size = new Size(186, 112);
@@ -144,7 +144,7 @@
             // 
             // difficoltaDifficile
             // 
-            difficoltaDifficile.Font = new Font("Miriam Libre", 26.2499962F, FontStyle.Bold | FontStyle.Italic);
+            difficoltaDifficile.Font = new Font("Microsoft Sans Serif", 26.2499962F, FontStyle.Bold | FontStyle.Italic);
             difficoltaDifficile.Location = new Point(557, 170);
             difficoltaDifficile.Name = "difficoltaDifficile";
             difficoltaDifficile.Size = new Size(198, 112);
@@ -155,7 +155,7 @@
             // 
             // difficoltaFacile
             // 
-            difficoltaFacile.Font = new Font("Miriam Libre", 26.2499962F, FontStyle.Bold | FontStyle.Italic);
+            difficoltaFacile.Font = new Font("Microsoft Sans Serif", 26.2499962F, FontStyle.Bold | FontStyle.Italic);
             difficoltaFacile.Location = new Point(41, 170);
             difficoltaFacile.Name = "difficoltaFacile";
             difficoltaFacile.Size = new Size(186, 112);
@@ -170,7 +170,7 @@
             label2.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label2.Location = new Point(141, 46);
             label2.Name = "label2";
-            label2.Size = new Size(509, 55);
+            label2.Size = new Size(634, 69);
             label2.TabIndex = 33;
             label2.Text = "SCEGLI DIFFICOLTA";
             // 
@@ -437,10 +437,10 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Algerian", 36F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            label3.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Italic, GraphicsUnit.Point, 0);
             label3.Location = new Point(41, 136);
             label3.Name = "label3";
-            label3.Size = new Size(0, 54);
+            label3.Size = new Size(0, 69);
             label3.TabIndex = 60;
             // 
             // label4
@@ -450,7 +450,7 @@
             label4.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label4.Location = new Point(97, 27);
             label4.Name = "label4";
-            label4.Size = new Size(612, 55);
+            label4.Size = new Size(761, 69);
             label4.TabIndex = 61;
             label4.Text = "GIOCO DELL'IMPICCATO";
             label4.Click += label4_Click;
@@ -458,10 +458,10 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Font = new Font("Algerian", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
+            label5.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 0);
             label5.Location = new Point(82, 134);
             label5.Name = "label5";
-            label5.Size = new Size(0, 35);
+            label5.Size = new Size(0, 46);
             label5.TabIndex = 62;
             // 
             // testaImpiccato
@@ -540,41 +540,41 @@
             // 
             perso.AutoSize = true;
             perso.BackColor = Color.White;
-            perso.Font = new Font("Stencil", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            perso.Font = new Font("Microsoft Sans Serif", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
             perso.ForeColor = Color.Red;
             perso.Location = new Point(255, 27);
             perso.Name = "perso";
-            perso.Size = new Size(272, 57);
+            perso.Size = new Size(356, 69);
             perso.TabIndex = 71;
             perso.Text = "HAI PERSO";
             // 
             // parolaSvelata
             // 
             parolaSvelata.AutoSize = true;
-            parolaSvelata.Font = new Font("Stencil", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            parolaSvelata.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             parolaSvelata.Location = new Point(118, 170);
             parolaSvelata.Name = "parolaSvelata";
-            parolaSvelata.Size = new Size(0, 38);
+            parolaSvelata.Size = new Size(0, 46);
             parolaSvelata.TabIndex = 72;
             // 
             // parolaFinale
             // 
             parolaFinale.AutoSize = true;
-            parolaFinale.Font = new Font("Stencil", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            parolaFinale.Font = new Font("Microsoft Sans Serif", 24F, FontStyle.Regular, GraphicsUnit.Point, 0);
             parolaFinale.Location = new Point(18, 120);
             parolaFinale.Name = "parolaFinale";
-            parolaFinale.Size = new Size(129, 38);
+            parolaFinale.Size = new Size(126, 46);
             parolaFinale.TabIndex = 73;
             parolaFinale.Text = "label6";
             // 
             // riavviare
             // 
             riavviare.BackColor = Color.FromArgb(128, 255, 128);
-            riavviare.Font = new Font("Miriam Libre", 26.2499962F, FontStyle.Bold | FontStyle.Italic);
+            riavviare.Font = new Font("Microsoft Sans Serif", 26.2499962F, FontStyle.Bold | FontStyle.Italic);
             riavviare.ForeColor = Color.Green;
-            riavviare.Location = new Point(12, 227);
+            riavviare.Location = new Point(12, 183);
             riavviare.Name = "riavviare";
-            riavviare.Size = new Size(186, 112);
+            riavviare.Size = new Size(237, 156);
             riavviare.TabIndex = 74;
             riavviare.Text = "RIAVVIA";
             riavviare.UseVisualStyleBackColor = false;
@@ -583,11 +583,11 @@
             // terminare
             // 
             terminare.BackColor = Color.FromArgb(255, 128, 128);
-            terminare.Font = new Font("Miriam Libre", 26.2499962F, FontStyle.Bold | FontStyle.Italic);
+            terminare.Font = new Font("Microsoft Sans Serif", 26.2499962F, FontStyle.Bold | FontStyle.Italic);
             terminare.ForeColor = Color.Maroon;
-            terminare.Location = new Point(255, 227);
+            terminare.Location = new Point(255, 183);
             terminare.Name = "terminare";
-            terminare.Size = new Size(186, 112);
+            terminare.Size = new Size(236, 156);
             terminare.TabIndex = 75;
             terminare.Text = "TERMINA";
             terminare.UseVisualStyleBackColor = false;
@@ -597,17 +597,17 @@
             // 
             vittoria.AutoSize = true;
             vittoria.BackColor = Color.White;
-            vittoria.Font = new Font("Stencil", 36F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            vittoria.Font = new Font("Microsoft Sans Serif", 48F, FontStyle.Regular, GraphicsUnit.Point, 0);
             vittoria.ForeColor = Color.Lime;
-            vittoria.Location = new Point(255, 27);
+            vittoria.Location = new Point(154, 24);
             vittoria.Name = "vittoria";
-            vittoria.Size = new Size(261, 57);
+            vittoria.Size = new Size(437, 91);
             vittoria.TabIndex = 76;
             vittoria.Text = "HAI VINTO";
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 14F);
+            AutoScaleDimensions = new SizeF(9F, 18F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
             ClientSize = new Size(758, 420);
@@ -661,7 +661,7 @@
             Controls.Add(difficoltaMedia);
             Controls.Add(difficoltaDifficile);
             Controls.Add(baseImpiccato);
-            Font = new Font("Stencil", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             ForeColor = Color.Black;
             Name = "Form1";
             Text = "Form1";
